@@ -1,0 +1,81 @@
+body {
+    font-size: 15pt;
+    /* font-style: normal; */
+    font-family: sans-serif;
+}
+
+.content {
+  text-align: center;
+}
+.cells-check, .charge-level {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 5px;
+  background: lightgray;
+}
+.button {
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 15px;
+
+  background-color: rgb(113, 222, 255);
+}
+
+.button:hover {
+  transform: scale(1.05);
+  transition: all 0.8s ease 0s;
+}
+
+.resalt {
+  color: red;
+}
+
+.batery {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.batery-body {
+  height: 40px;
+  width: 120px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(206, 206, 206); */
+  
+  position: relative;
+}
+
+.batery-contakt {
+  height: 20px;
+  width: 5px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 0% 50% 50% 0%;
+
+  background-color: darkgray;
+}
+
+.batery-level {
+  height: 100%;
+  width: 100%;
+  
+  background: green;
+
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(19, 156, 49) 50%); 
+  
+  position: absolute;
+  z-index: -5;
+  top: 0px;
+  left: 0px;
+  
+  transition-duration: 0.5s;
+}

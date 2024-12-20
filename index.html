@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LiFePo4</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="content">
+    <div class="calculator">
+      <h1>LiFePo4 voltage calculator</h1>
+      <form action= "" class="form">
+        
+        <div class="cells-check">
+          <h2>Count of cell</h2>
+          <input type="radio" name="cell" id="cell1" value="4" checked>
+          <label for="cell1">4 cell</label>
+          <input type="radio" name="cell" id="cell2" value="8">
+          <label for="cell2">8 cell</label>
+          <input type="radio" name="cell" id="cell3" value="16">
+          <label for="cell3">16 cell</label>
+        </div>
+        <div class="charge-level">
+          <h2>Charge level</h2>
+          <input type="number" name="level" id="level" value="100" >%
+        </div>
+        <div>
+          <button type="submit" class="button">Count</button>
+        </div>
+      </form>
+
+      <div class="batery">
+        <div class="batery-body">
+          <div class="batery-level">
+            
+          </div>
+          <div class="resalt">
+          RESULT V
+          </div>
+        </div>
+        <div class="batery-contakt">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
