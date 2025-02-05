@@ -52,7 +52,7 @@ function voltageCount(cell, percent) {
   percent = Number(percent);
   const sum = ((MAX_BAT_VOLTAGE - MIN_BAT_VOLTAGE) / 100 * percent + MIN_BAT_VOLTAGE) * cell;
   
-  BAT_return +sum.toFixed(2);;
+  return +sum.toFixed(2);;
 }
 
 
