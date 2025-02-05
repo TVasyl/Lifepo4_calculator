@@ -1,14 +1,23 @@
 const minVoltage = 2.5;
 const maxVoltage = 3.65;
 
+
+//DOM elements
 const cellsInp = document.getElementsByName('cell');
-const percInp = document.querySelector('#level');
+const percInp = document.querySelector('.charge-level__slider');
 const but = document.querySelector('.button');
 
-const batLevel = document.querySelector('.batery-level');
+const output = document.querySelector(".charge-level__lable");
 
+const batLevel = document.querySelector('.batery-level');
 but.addEventListener('click', butHandler);
 
+
+//Slider input handler
+output.innerHTML = `${percInp.value}%`; 
+percInp.oninput = function() {
+  output.innerHTML = `${this.value}%`;
+}
 
 
 function butHandler(e) {
@@ -54,9 +63,7 @@ function render(voltage) {
 
 
 function renderBatLevel(value) {
-  // let styleOfBat = 'width:' + value + '%';
-  let styleOfBat = 'width:' + value + '%';
+  let styleOfBat = `width: ${value}%`;
   batLevel.setAttribute('style', styleOfBat);
 }
 
-//console.log(voltageCount('8', '90'))

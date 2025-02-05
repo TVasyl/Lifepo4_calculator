@@ -11,48 +11,76 @@
   
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="content">
-    <div class="calculator">
-      <h1>LiFePo4 voltage calculator</h1>
-      <form action= "" class="form">
-        
-        <div class="cells-check">
-          <h2>Count of cell</h2>
-          <input type="radio" name="cell" id="cell1" value="4" checked>
-          <label for="cell1">4 cell</label>
-          <input type="radio" name="cell" id="cell2" value="8">
-          <label for="cell2">8 cell</label>
-          <input type="radio" name="cell" id="cell3" value="16">
-          <label for="cell3">16 cell</label>
-        </div>
-        <div class="charge-level">
-          <h2>Charge level</h2>
-          <input type="number" name="level" id="level" value="100" >%
-        </div>
-        <div>
-          <button type="submit" class="button">Count</button>
-        </div>
-      </form>
+  <div class="wraper">
 
-      <div class="batery">
-        <div class="batery-body">
-          <div class="batery-level">
-            
-          </div>
-          <div class="resalt">
-          RESULT V
-          </div>
-        </div>
-        <div class="batery-contakt">
-          
-        </div>
+    <!-- Header -->
+    <header class="header">
+      <h1>LiFePo4 voltage calculator</h1>
+    </header>
+
+    <main class="main-content">
+
+      <!-- Batery image -->
+      <div class="batery-image">
+        <img src="assets/lifipo4_eve_image.webp" alt="LiFePo4" width="100px" height="100px">
       </div>
-    </div>
+      <div class="calculator">
+        
+        <!-- Input data form -->
+        <form action= "" class="form">
+          <div class="cells-check">
+            <h2>Voltage of batery</h2>
+            <div class="cells-check__inputs">
+              <div class="cells-check__input">
+                <input type="radio" name="cell" id="cell1" value="4" checked>
+                <label for="cell1">12V</label>
+              </div>
+              <div class="cells-check__input">
+                <input type="radio" name="cell" id="cell2" value="8">
+                <label for="cell2">24V</label>
+              </div>
+              <div class="cells-check__input">
+                <input type="radio" name="cell" id="cell3" value="16">
+                <label for="cell3">48V</label>
+              </div>
+            </div>
+          </div>
+          <div class="charge-level">
+            <h2>Charge level</h2>
+            <div class="charge-level__slidecontainer">
+              <input type="range" min="0" max="100" value="100" class="charge-level__slider" id="level" name="level" step="5" list="markers">
+              <div class="charge-level__lable"></div>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="button">Count</button>
+          </div>
+        </form>
+        
+        <!-- Batery image with value-->
+        <div>
+          <div class="batery">
+            <div class="batery-body">
+              <div class="batery-level"></div>
+              <div class="resalt"></div>
+            </div>
+            <div class="batery-contakt"></div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__made">Made by <strong>Vasyl Trots</strong></div>
+      <div class="footer__year">&#169 2025</div>
+
+    </footer>
   </div>
-  <script src="main.js"></script>
+  <script src="src/main.js"></script>
 </body>
 </html>
