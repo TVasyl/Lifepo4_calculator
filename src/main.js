@@ -50,7 +50,7 @@ function inpValueCheck(element) {
 function voltageCount(cell, percent) {
   cell = Number(cell);
   percent = Number(percent);
-  const sum = ((MAX_VOLTAGE - MIN_BAT_VOLTAGE) / 100 * percent + MIN_BAT_VOLTAGE) * cell;
+  const sum = ((MAX_BAT_VOLTAGE - MIN_BAT_VOLTAGE) / 100 * percent + MIN_BAT_VOLTAGE) * cell;
   
   BAT_return +sum.toFixed(2);;
 }
