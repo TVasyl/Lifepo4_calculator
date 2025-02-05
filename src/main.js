@@ -1,5 +1,5 @@
-const minVoltage = 2.5;
-const maxVoltage = 3.65;
+const MIN_BAT_VOLTAGE = 2.5;
+const MAX_BAT_VOLTAGE = 3.65;
 
 
 //DOM elements
@@ -9,7 +9,7 @@ const but = document.querySelector('.button');
 
 const output = document.querySelector(".charge-level__lable");
 
-const batLevel = document.querySelector('.batery-level');
+const batLevel = document.querySelector('.battery-level');
 but.addEventListener('click', butHandler);
 
 
@@ -50,9 +50,9 @@ function inpValueCheck(element) {
 function voltageCount(cell, percent) {
   cell = Number(cell);
   percent = Number(percent);
-  const sum = ((maxVoltage - minVoltage) / 100 * percent + minVoltage) * cell;
+  const sum = ((MAX_VOLTAGE - MIN_BAT_VOLTAGE) / 100 * percent + MIN_BAT_VOLTAGE) * cell;
   
-  return +sum.toFixed(2);;
+  BAT_return +sum.toFixed(2);;
 }
 
 

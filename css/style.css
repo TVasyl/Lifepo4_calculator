@@ -31,9 +31,6 @@ html, body {
   justify-content: space-between;
 }
 
-.header {
-  /* padding: 20px; */
-}
 
 .footer{
   height: 30px;
@@ -50,6 +47,10 @@ html, body {
   max-width: 800px;
   margin: 0 auto;
 
+}
+
+.app-describe {
+  margin: 10px;
 }
 
 .cells-check, .charge-level {
@@ -70,7 +71,6 @@ html, body {
 }
 
 .charge-level__slider {
-  -webkit-appearance: none;
   width: 300px;
   height: 15px;
   border-radius: 5px;  
@@ -123,7 +123,7 @@ html, body {
   z-index: 5;
 }
 
-.batery {
+.battery {
   margin: 10px;
   display: flex;
   align-items: center;
@@ -131,7 +131,7 @@ html, body {
   
   
 }
-.batery-body {
+.battery-body {
   height: 40px;
   width: 120px;
   border: 2px solid #000;
@@ -143,7 +143,7 @@ html, body {
   position: relative;
 }
 
-.batery-contakt {
+.battery-contakt {
   height: 20px;
   width: 5px;
   border-top: 2px solid #000;
@@ -154,7 +154,7 @@ html, body {
   background-color: darkgray;
 }
 
-.batery-level {
+.battery-level {
   height: 100%;
   width: 100%;
   
@@ -171,7 +171,7 @@ html, body {
   transition-duration: 0.5s;
 }
 
-.batery-result {
+.battery-result {
   position: absolute;
 
   z-index: 2;
@@ -179,10 +179,4 @@ html, body {
 
 .footer {
   padding: 20px;
-}
-.footer__made {
-
-}
-.footer__year {
-
 }

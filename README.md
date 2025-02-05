@@ -1,0 +1,1 @@
+This app will help you understand what LiFePo4 battery voltage equals to the percentage of charge
